@@ -17,6 +17,9 @@ jobs:
       install:
         - brew install libtool
         - brew install gettext
+    - name: windows-amd64
+      os: windows
+      env: CGO_ENABLED=1 GOOS=windows GOARCH=amd64
 
 before_script:
   - go run build.go -verbose build-all
