@@ -2,11 +2,7 @@ language: go
 go: 1.14.x
 sudo: false
 
-stages:
-  - name: deploy
-    if: branch = master
-
-matrix:
+jobs:
   include:
     - name: linux-amd64
       os: linux
