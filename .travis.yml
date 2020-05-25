@@ -34,7 +34,7 @@ after_success:
 
 deploy:
   provider: releases
-  api_key: "${GITHUB_PAT}"
+  token: $GITHUB_PAT
   file:
     - tor-static-linux-amd64.tar.gz
     - tor-static-darwin-amd64.tar.gz
