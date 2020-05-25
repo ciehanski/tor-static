@@ -38,7 +38,6 @@ deploy:
   file:
     - tor-static-linux-amd64.tar.gz
     - tor-static-darwin-amd64.tar.gz
-  skip_cleanup: true
   draft: true
   on:
     repo: cretz/tor-static
